@@ -10,5 +10,6 @@
 #define CoverPhotoTwitterExample_Header_h
 
 #import "UIImage+ImageEffects.h"
+#import "UIImage+StackBlur.h"
 
 #endif

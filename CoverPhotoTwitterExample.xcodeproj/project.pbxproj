@@ -16,6 +16,8 @@
 		E69B0F50199BE1000055DD62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69B0F4E199BE1000055DD62 /* Main.storyboard */; };
 		E69B0F52199BE1000055DD62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69B0F51199BE1000055DD62 /* Images.xcassets */; };
 		E69B0F5E199BE1000055DD62 /* CoverPhotoTwitterExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B0F5D199BE1000055DD62 /* CoverPhotoTwitterExampleTests.swift */; };
+		E6D5742C199F553700A8BA5E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D5742B199F553700A8BA5E /* QuartzCore.framework */; };
+		E6D57432199F5A9400A8BA5E /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D57431199F5A9400A8BA5E /* UIImage+StackBlur.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		E69B0F57199BE1000055DD62 /* CoverPhotoTwitterExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoverPhotoTwitterExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69B0F5C199BE1000055DD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69B0F5D199BE1000055DD62 /* CoverPhotoTwitterExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverPhotoTwitterExampleTests.swift; sourceTree = "<group>"; };
+		E6D5742B199F553700A8BA5E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E6D57430199F5A9400A8BA5E /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+StackBlur.h"; path = "UIImage Category/UIImage+StackBlur.h"; sourceTree = "<group>"; };
+		E6D57431199F5A9400A8BA5E /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+StackBlur.m"; path = "UIImage Category/UIImage+StackBlur.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D5742C199F553700A8BA5E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +73,8 @@
 		E686B587199BE9C600D3E1FE /* UIImage Category */ = {
 			isa = PBXGroup;
 			children = (
+				E6D57430199F5A9400A8BA5E /* UIImage+StackBlur.h */,
+				E6D57431199F5A9400A8BA5E /* UIImage+StackBlur.m */,
 				E686B58E199BEB6100D3E1FE /* UIImage+ImageEffects.m */,
 				E686B58D199BEB5900D3E1FE /* UIImage+ImageEffects.h */,
 			);
@@ -136,6 +144,7 @@
 		E69B0F5B199BE1000055DD62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E6D5742B199F553700A8BA5E /* QuartzCore.framework */,
 				E69B0F5C199BE1000055DD62 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -242,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D57432199F5A9400A8BA5E /* UIImage+StackBlur.m in Sources */,
 				E686B58F199BEB6100D3E1FE /* UIImage+ImageEffects.m in Sources */,
 				E69B0F4D199BE1000055DD62 /* ViewController.swift in Sources */,
 				E69B0F4B199BE1000055DD62 /* AppDelegate.swift in Sources */,

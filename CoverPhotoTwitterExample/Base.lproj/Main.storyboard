@@ -143,6 +143,8 @@
                                 <exclude reference="mlV-Io-ZEn"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Gpa-dG-S5t"/>
+                                <exclude reference="tHE-cE-DUR"/>
                                 <exclude reference="5Kz-hP-Ygi"/>
                                 <exclude reference="A9S-NY-DPb"/>
                                 <exclude reference="GA3-HG-ljl"/>
@@ -151,20 +153,12 @@
                                 <exclude reference="Wbh-3M-GrP"/>
                                 <exclude reference="puE-6u-KVY"/>
                                 <exclude reference="qw9-HI-b23"/>
-                                <exclude reference="tHE-cE-DUR"/>
-                                <exclude reference="Gpa-dG-S5t"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="pmZ-bj-xCZ"/>
-                                <include reference="XZv-nF-lQ7"/>
-                                <include reference="myL-jJ-haP"/>
-                                <include reference="mlV-Io-ZEn"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="Gpa-dG-S5t"/>
+                                <include reference="tHE-cE-DUR"/>
                                 <include reference="5Kz-hP-Ygi"/>
                                 <include reference="A9S-NY-DPb"/>
                                 <include reference="GA3-HG-ljl"/>
@@ -173,8 +167,14 @@
                                 <include reference="Wbh-3M-GrP"/>
                                 <include reference="puE-6u-KVY"/>
                                 <include reference="qw9-HI-b23"/>
-                                <include reference="tHE-cE-DUR"/>
-                                <include reference="Gpa-dG-S5t"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pmZ-bj-xCZ"/>
+                                <include reference="XZv-nF-lQ7"/>
+                                <include reference="myL-jJ-haP"/>
+                                <include reference="mlV-Io-ZEn"/>
                             </mask>
                         </variation>
                     </view>

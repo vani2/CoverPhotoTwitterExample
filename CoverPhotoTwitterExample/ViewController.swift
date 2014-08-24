@@ -15,11 +15,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     let kInitialCoverPhotoImageViewHeight:CGFloat = 160
     
     let kCirclePhotoBorderWidth:CGFloat = 1
-    let kInitialCoverPhotoBlurRadius:CGFloat = 2
+    let kInitialCoverPhotoBlurRadius:CGFloat = 5
     let kWhiteComponentBlurTintColor:CGFloat = 0.4
     let kAlphaComponentBlurTintColor:CGFloat = 0.15
     let kCoverPhotoSaturationDeltaFactor:CGFloat = 1
-    let kBlurFactor:CGFloat = 0.05
+    let kBlurFactor:CGFloat = 0.25
     
 //    MARK Outlets
     @IBOutlet var scrollView : UIScrollView
@@ -63,7 +63,24 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func blurCoverPhoto(radius:CGFloat) {
         let blurTintColor:UIColor! = UIColor(white:kWhiteComponentBlurTintColor, alpha:kAlphaComponentBlurTintColor)
         
-        coverPhotoImageView.image = self.originalCoverImage?.applyBlurWithRadius(radius, tintColor: blurTintColor, saturationDeltaFactor: kCoverPhotoSaturationDeltaFactor, maskImage: nil)
+//        coverPhotoImageView.image = originalCoverImage?.applyBlurWithRadius(radius, tintColor: blurTintColor, saturationDeltaFactor: kCoverPhotoSaturationDeltaFactor, maskImage: nil)
+//        coverPhotoImageView.image = blurWithRadius(radius)
+        let uintRadius:Int = Int(radius)
+        coverPhotoImageView.image = originalCoverImage?.stackBlur(uintRadius)
+    }
+    
+    
+    func blurWithRadius(radius:CGFloat) -> UIImage {
+        let context:CIContext! = CIContext(options: nil)
+        let inputImage:CIImage! = CIImage(CGImage:originalCoverImage?.CGImage)
+        let filter:CIFilter! = CIFilter(name: "CIGaussianBlur")
+        filter.setValue(inputImage, forKey:kCIInputImageKey)
+        filter.setValue(radius, forKey:"inputRadius")
+
+        let result:CIImage! = filter.valueForKey(kCIOutputImageKey) as CIImage
+        let cgImage:CGImageRef! = context.createCGImage(result, fromRect:inputImage.extent())
+
+        return UIImage(CGImage:cgImage)
     }
     
 //    MARK Scroll View Delegate
