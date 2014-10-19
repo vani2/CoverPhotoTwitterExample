@@ -5,6 +5,9 @@ Example of blurred expanding cover photo like twitter app
 
 The Problem is every popular examples show how to create this feature manually in code. Check my example, fully compatible with autolayout, created in Xcode 6 using Swift.
 
+
+![alt tag](https://github.com/vani2/CoverPhotoTwitterExample/blob/master/demo.gif)
+
 Important
 ========================
 1. I use UIImage category for blurring written on objC.
