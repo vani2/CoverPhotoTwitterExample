@@ -22,14 +22,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     let kBlurFactor:CGFloat = 0.05
     
 //    MARK Outlets
-    @IBOutlet var scrollView : UIScrollView
-    @IBOutlet var coverPhotoImageView : UIImageView
-    @IBOutlet var circlePhotoImageView : UIImageView
+    @IBOutlet var scrollView : UIScrollView!
+    @IBOutlet var coverPhotoImageView : UIImageView!
+    @IBOutlet var circlePhotoImageView : UIImageView!
     
-    @IBOutlet var coverPhotoImageViewTopSpaceConstraint : NSLayoutConstraint
-    @IBOutlet var scrollViewContentTopSpaceConstraint : NSLayoutConstraint
-    @IBOutlet var coverPhotoImageViewHeight : NSLayoutConstraint
-    @IBOutlet var circlePhotoHeight : NSLayoutConstraint
+    @IBOutlet var coverPhotoImageViewTopSpaceConstraint : NSLayoutConstraint!
+    @IBOutlet var scrollViewContentTopSpaceConstraint : NSLayoutConstraint!
+    @IBOutlet var coverPhotoImageViewHeight : NSLayoutConstraint!
+    @IBOutlet var circlePhotoHeight : NSLayoutConstraint!
     
 //    MARK Instance Variables
     var originalCoverImage:UIImage?
