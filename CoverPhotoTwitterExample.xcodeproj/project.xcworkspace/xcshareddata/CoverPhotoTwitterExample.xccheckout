@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7C07C960-6E1A-4435-916F-CAECA347BCFF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoverPhotoTwitterExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>78A0457BCE9D7CEE43562D33507F1F6468DD1F3E</key>
+		<string>https://github.com/vani2/CoverPhotoTwitterExample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoverPhotoTwitterExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>78A0457BCE9D7CEE43562D33507F1F6468DD1F3E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vani2/CoverPhotoTwitterExample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>78A0457BCE9D7CEE43562D33507F1F6468DD1F3E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>78A0457BCE9D7CEE43562D33507F1F6468DD1F3E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoverPhotoTwitterExample</string>
+		</dict>
+	</array>
+</dict>
+</plist>
