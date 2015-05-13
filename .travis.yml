@@ -1,5 +1,0 @@
-language: objective-c
-xcode_project: CoverPhotoTwitterExample.xcodeproj # path to your xcodeproj folder
-xcode_scheme: CoverPhotoTwitterExampleTests
-xcode_sdk:
-- iphoneos8.0
