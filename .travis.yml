@@ -2,4 +2,4 @@ language: objective-c
 xcode_project: CoverPhotoTwitterExample.xcodeproj # path to your xcodeproj folder
 xcode_scheme: CoverPhotoTwitterExampleTests
 xcode_sdk:
-- iphonesimulator8.0
+- iphoneos8.0
